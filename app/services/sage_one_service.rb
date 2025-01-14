@@ -27,7 +27,7 @@ class SageOneService
     {
       # Map CSV columns to Sage One API fields
       field1: row["column1"],
-      field2: row["column2"],
+      field2: row["column2"]
       # Add more fields as needed
     }
   end
