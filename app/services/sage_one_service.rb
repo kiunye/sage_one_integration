@@ -1,11 +1,11 @@
-require 'csv'
-require 'httparty'
+require "csv"
+require "httparty"
 
 class SageOneService
-  API_BASE_URL = ENV['SAGE_ONE_API_URL']
+  API_BASE_URL = ENV["SAGE_ONE_API_URL"]
   HEADERS = {
-    'Authorization' => "Bearer #{ENV['SAGE_ONE_API_KEY']}",
-    'Content-Type' => 'application/json'
+    "Authorization" => "Bearer #{ENV["SAGE_ONE_API_KEY"]}",
+    "Content-Type" => "application/json"
   }
 
   def self.send_data(file_path)
@@ -26,8 +26,8 @@ class SageOneService
   def self.transform_csv_row_to_payload(row)
     {
       # Map CSV columns to Sage One API fields
-      field1: row['column1'],
-      field2: row['column2'],
+      field1: row["column1"],
+      field2: row["column2"],
       # Add more fields as needed
     }
   end
