@@ -1,24 +1,7 @@
-# README
+# SageOne Integration
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A fun little project that helps you load CSV files directly from your FTP server and map them to the SageOne API.
 
-Things you may want to cover:
+To test this out copy the `.env.example` and create a new file named `.env`. Inside the `.env` file you will need to fill out all your FTP login credentials as well as adding your SageOne API key
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Read more about the SageOne API here <https://developer.sage.com/>
